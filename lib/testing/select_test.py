@@ -10,9 +10,11 @@ from sql_queries import (
     select_youngest_bear_and_returns_name_and_age,
 )
 
+
 connection = sqlite3.connect(":memory:")
 
 cursor = connection.cursor()
+
 
 create_file = open("lib/create.sql")
 create_as_string = create_file.read()
